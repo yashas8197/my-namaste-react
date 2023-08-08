@@ -1,3 +1,9 @@
+# Namaste React 🚀
+
+# Namaste React 🚀
+
+# Assignment 1
+
 # What is Emmet?
 
 - Emmet generates the code inside VS Code.
@@ -38,3 +44,23 @@
 # What are async and defer?
 
 - Async allows script to run as soon as it is loaded without blocking other elements on the page. Defer means script will only execute after the page has finished loading.
+
+# Parcel
+
+- Dev Build
+- Local Server
+- HMR = Hot Module Replacement
+- File Watching Algorithm - written in C++
+- Caching - Faster Builds
+- Image Optimization
+- Minification
+- Bundling
+- Compress
+- Consistent Hashing
+- Code Splitting
+- Differential Bundling - support older browsers
+- Diagnostic
+- Error Handling
+- HTTPs
+- Tree Shaking - remove unused code
+- Different dev and prod bundles
