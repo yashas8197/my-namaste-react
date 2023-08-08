@@ -1,0 +1,28 @@
+{
+  "name": "namaste-react",
+  "version": "1.0.0",
+  "description": "This is namaste javascript ",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yashas8197/my-namate-react.git"
+  },
+  "author": "yashas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yashas8197/my-namate-react/issues"
+  },
+  "homepage": "https://github.com/yashas8197/my-namate-react#readme",
+  "devDependencies": {
+    "parcel": "^2.9.3"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "bowserslist": [
+    "last 2 versions"
+  ]
+}
