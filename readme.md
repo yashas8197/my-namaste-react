@@ -236,3 +236,75 @@ Answer : dist folder is used by bundlers to store minified version of source cod
 
 Question 14 : What is browserlists?
 Answer : browserlists is a package used to make our code suitable for many browsers and their previous versions. This helps us to ensure that our code is working similarly for at least most of the users.
+
+# Episode 4
+
+1. Is JSX mandatory for React ?
+   Answer: No, JSX is not mandatory for React. We can create component
+   without writing JSX. We can use the React.createElement as an alternative of
+   JSX.
+2. Is ES6 mandatory for React ?
+   Answer: No, ES6 is not mandatory for React. We can use the older JS version
+   and concepts like function keywords and others to write code for React.
+3. {TitleComponent} vs {<TitleComponent />} vs
+   {<TitleComponent></TitleComponent>} in JSX ?
+   Answer:
+    All of the syntaxes above represents differnt ways of rendering a
+   component.
+    {TitleComponent}: This represents a value in the javascript. If there is
+   a variable called TitleComponent then it will render the variable value in
+   the page.
+    {<TitleComponent />}: This will return a React component in the page.
+   There is no children passed in the parameter.
+    {<TitleComponent></TitleComponent>}: This is another way of
+   rendering React component just like the self closing one. This way is
+   used when we are supposed to provide some children in the Component
+   as wel
+4. How can I write Comments in JSX ?
+   Answer: To write comments in JSX we can use {} in between the JSX and
+   write comments like we do normally in Javascript by using // or /\* \*/
+5. What is <React.Fragment></React.Fragment> or <></> ?
+   Answer: React.Fragment or <></> is generally used to wrap the elements.
+   React only allows to return only one component. So if we want to return multiple
+   components then we use Fragment to wrap those elements. IT is better to use
+   Fragments instead of div because fragments doesn’t add another node in
+   node.
+6. What is Virtual DOM ?
+   Answer: Virtual DOM is a lightweight copy of an actual DOM. It is used by react
+   to optimize the performance of the app by only changing the nodes which are
+   necessary in actual DOM instead of rerendering the whole DOM.
+7. What is Reconciliation in React ?
+   Answer: Reconciliation is the process of calculating the minimum set of
+   changes required to update the Actual DOM from the previous state and making
+   the changes to update the DOM. Reconciliation is the process by which React
+   updates the UI to reflect changes in the component state. The reconciliation
+   algorithm is the set of rules that React uses to determine how to update the UI
+   in the most efficient way possible.
+8. What is React Fiber ?
+   Answer: Fiber Reconciler is the new reconciliation algorithm in React. It is
+   designed to enhance rendering performance and support concurrent updates.
+   It breaks down the rendering process into smaller units (fibers) allowing
+   interruption and prioritization of tasks. This enables React to efficiently manage
+   component updates, handle asynchronous tasks without blocking the main
+   thread, and improve user interface responsiveness, leading to smoother user
+   experiences, especially in complex or dynamic applications.
+9. Why do we need keys in React ? When do we need keys in React ?
+   Answer: We need keys in React so that React can identify the individual
+   elements in the DOM. Whenever there is any change the in nodes like if any
+   node is inserted, deleted or modified, React can identify the individual
+   node/nodes from the keys and make minimal and efficient changes in the DOM.
+   So adding keys increases the performance of React rendering so it is
+   recommended to give keys to all the elements.
+10. Can we use index as keys in React ?
+    Answer: It is not recommended to use index as keys in React but we can use
+    the index as keys. The issue with it is that if we give index as keys then the
+    performance of the app may suffer. So even though we can use index as keys
+    but it is not recommended to do so.
+11. What are props in React?
+    Answer: Props are the variable of functions which we pass from a parent to a
+    child component in React. Props are the means of passing data from one
+    component to another.
+12. What is a config driven UI?
+    Answer: Config driven UI means that we are controlling our UI based on the data
+    which might come from backend APIs or somewhere else. So we render component
+    based on the config data.
