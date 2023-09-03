@@ -1,7 +1,5 @@
 # Namaste React 🚀
 
-# Namaste React 🚀
-
 # Assignment 1
 
 # What is Emmet?
