@@ -308,3 +308,25 @@ Answer : browserlists is a package used to make our code suitable for many brows
     Answer: Config driven UI means that we are controlling our UI based on the data
     which might come from backend APIs or somewhere else. So we render component
     based on the config data.
+
+Header
+
+- Logo
+- Nav Items
+  Body
+- Search
+- RestaurantContainer
+- RestaurantCard
+  Footer
+- CopyRight
+- Links
+- Address
+- Contact
+
+-Default Export/Import
+export default components
+import component from "path";
+
+-Named Export/Import
+export const components =
+import {component} from "path";
