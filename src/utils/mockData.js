@@ -16,7 +16,7 @@ const reslist = [
         "North Indian",
         "Punjabi",
       ],
-      avgRating: 4.1,
+      avgRating: 3.8,
       feeDetails: {
         restaurantId: "292108",
         fees: [
@@ -34,7 +34,7 @@ const reslist = [
         totalFee: 5400,
       },
       parentId: "21134",
-      avgRatingString: "4.1",
+      avgRatingString: "3.8",
       totalRatingsString: "10K+",
       sla: {
         deliveryTime: 30,
@@ -191,7 +191,7 @@ const reslist = [
         "Chinese",
         "Seafood",
       ],
-      avgRating: 4.4,
+      avgRating: 3.1,
       feeDetails: {
         restaurantId: "229",
         fees: [
