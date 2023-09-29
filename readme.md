@@ -395,3 +395,129 @@ useState and useEffect are most commonly used react hooks. They let us manage th
 A/ We often need to track some variable in our code, which means these variables change state and we need to manage their state.
 
 useState() hook does exactly that. It manages the states of stateful variables.
+
+# Microservices vs. Monolith Architecture and the useEffect Hook
+
+This README provides a brief overview of Microservice and Monolith Architectures, as well as an explanation of the `useEffect` hook in React.
+
+## Microservice Architecture
+
+Microservice is a design approach where services are created to perform specific functionalities within an application. In Microservice architecture:
+
+- Different microservices are developed to provide distinct functionalities.
+- Microservices are loosely connected and can interact with each other.
+- Each microservice can have its own technology stack.
+
+## Monolith Architecture
+
+Monolith architecture is the traditional approach where all services are built within the same project. In Monolith architecture:
+
+- All modules for different services are written within a single project.
+- The project encompasses logic for database connections, authentication, user interfaces, backend operations, and more.
+- Deploying a monolith project typically involves compiling and building the entire codebase.
+
+## Differences between Microservice and Monolith Architecture
+
+Here are the key distinctions between Microservice and Monolith Architectures:
+
+- **Structure**: Monolith architecture combines all modules within the same project, while Microservice architecture employs different microservices for different functionalities.
+- **Technology Stack**: Monolith architecture utilizes a single technology stack for the entire project, whereas Microservice architecture can incorporate various tech stacks for different services.
+- **Coupling**: In Monolith Architecture, components are tightly coupled, meaning they are highly interconnected. In contrast, Microservice architecture promotes loose coupling, where services have minimal dependencies on one another.
+- **Deployment**: Deploying Monolith Architecture projects often requires deploying the entire project at once, which can be challenging. Microservice architecture allows individual services to be deployed separately.
+
+## The `useEffect` Hook
+
+In React functional components, the `useEffect` hook plays a crucial role:
+
+- After rendering the initial UI or a placeholder UI (e.g., a loading spinner), the `useEffect` hook is used to perform tasks like making API calls or running functions when certain variables change.
+- It helps ensure that the component re-renders based on the values of specified dependencies.
+- The `useEffect` hook is essential for keeping the UI up-to-date with the values present in the component.
+
+In summary, understanding the differences between Microservice and Monolith Architectures is vital for choosing the right architectural approach for your project. Additionally, the `useEffect` hook in React is a powerful tool for managing side effects and keeping your UI responsive to changes in data or dependencies.
+
+Feel free to explore more resources and documentation for in-depth knowledge on these topics.
+
+## Optional Chaining
+
+Optional chaining is a feature in JavaScript that allows you to safely access nested properties of an object without causing an error if any part of the chain is null or undefined. It uses the `?.` syntax to check each property along the chain before attempting to access it. If any part of the chain is not valid, the expression returns `undefined` instead of throwing an error.
+
+## Shimmer UI
+
+Shimmer UI is a user interface technique used as a placeholder when data is being loaded or fetched in an application. Instead of displaying a traditional loading spinner or a blank screen, Shimmer UI enhances the user experience by showing a placeholder UI. This gives users the impression that the app is loading faster.
+
+## Difference Between JS Expression and JS Statement
+
+### JS Expression:
+
+A JavaScript expression is an operation that returns a value. It can be a function call, an operator combination, or other constructs.
+
+Examples of JavaScript expressions:
+
+- `2 + 3` (Arithmetic expression)
+- `x * 5` (Variable and arithmetic expression)
+- `Math.sqrt(9)` (Function call expression)
+- `"Hello, " + name` (String concatenation expression)
+
+### JS Statement:
+
+A JavaScript statement is a complete instruction in JavaScript that performs a specific task or action. Statements are used to control the flow of a program, manipulate data, and define behavior. They don't necessarily produce a value but execute an operation.
+
+Examples of JavaScript statements:
+
+- `let x = 10;` (Variable declaration and assignment statement)
+- `if (x > 5) { ... } else { ... }` (Conditional statement)
+- `for (let i = 0; i < 5; i++) { ... }` (Loop statement)
+- `function greet(name) { ... }` (Function declaration statement)
+
+# Project Name
+
+Description of your project goes here.
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Conditional Rendering](#conditional-rendering)
+- [CORS (Cross-Origin Resource Sharing)](#cors-cross-origin-resource-sharing)
+
+## Installation
+
+Provide instructions on how to install and set up your project here.
+
+## Usage
+
+Explain how to use your project or provide code examples and usage scenarios.
+
+## Conditional Rendering
+
+Conditional rendering is the process of displaying different content in a web application based on certain conditions. In a React application, you can use conditional rendering to control what is displayed to the user.
+
+# CORS (Cross-Origin Resource Sharing)
+
+CORS (Cross-Origin Resource Sharing) is a security feature in web browsers that controls and restricts web pages from making requests to domains other than the one that served the web page. It works through HTTP headers:
+
+1. **Same-Origin Policy:** Browsers normally block requests to different domains for security.
+
+2. **CORS Headers:** Servers can include specific headers in their responses to allow or deny cross-origin requests:
+
+   - `Access-Control-Allow-Origin`: Specifies which origins are allowed.
+   - `Access-Control-Allow-Methods`: Lists allowed HTTP methods.
+   - `Access-Control-Allow-Headers`: Lists allowed headers.
+   - `Access-Control-Allow-Credentials`: Determines if credentials (e.g., cookies) can be sent.
+   - `Access-Control-Expose-Headers`: Lists headers that can be exposed.
+
+Browser Enforcement: The browser checks these headers, allowing or blocking requests based on the server's settings. In a nutshell, CORS is a security measure that enables safe cross-origin data sharing for web applications while protecting against potential threats.
+
+# `async` and `await`
+
+`async` and `await` are keywords used in JavaScript for performing asynchronous tasks. You can make any function asynchronous by using the `async` keyword. When you want to wait for some asynchronous operation to complete and pause the program's execution until that operation finishes, you can use the `await` keyword. `await` will wait for the asynchronous operation to finish in the async function.
+
+Here's an example of using `async` and `await` to fetch data:
+
+```javascript
+const fetchData = async () => {
+  const response = await fetch(API);
+  const jsonResponse = await response.json();
+  return jsonResponse;
+};
+```
