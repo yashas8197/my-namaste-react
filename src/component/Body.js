@@ -8,8 +8,6 @@ const Body = () => {
 
   const [searchText, setSearchText] = useState("");
 
-  console.log("body Rendered");
-
   useEffect(() => {
     fetchData();
   }, []);
