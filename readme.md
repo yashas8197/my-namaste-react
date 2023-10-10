@@ -521,3 +521,50 @@ const fetchData = async () => {
   return jsonResponse;
 };
 ```
+
+# Assignment 7 - Finding the Path
+
+## Adding Images to Your App
+
+There are two common ways to add images in a React app:
+
+### Using CDN Links
+
+You can store the CDN URL and provide different IDs in the `img` tag to render the image.
+
+```jsx
+import { CDN_URL } from "../utils/consts";
+
+<img
+ alt="restaurant Logo"
+ src={CDN_URL + cloudinaryImageId}
+ className="res-logo"
+/>
+Importing Local Images
+You can directly import images stored in your local project.
+
+jsx
+Copy code
+import { Logo } from "../utils/img/Logo.png";
+
+<img
+ alt="restaurant Logo"
+ src={Logo}
+ className="res-logo"
+/>
+Using console.log(useState())
+When you do console.log(useState()), it returns an array with two elements. The first element is undefined if you haven't provided a default value, and the second element is the function for changing the value of the state variable.
+
+useEffect without a Dependency Array
+If you don't provide a dependency array in useEffect, it will execute the callback function on every re-render, which might not be the desired behavior.
+
+Single Page Application (SPA)
+SPA stands for Single Page Application. It's a web application that renders different components based on the URL. SPAs change the displayed component without refreshing the entire page when the URL changes, unlike traditional websites.
+
+Client-Side Routing vs. Server-Side Routing
+Server-Side Routing
+Server-side routing involves fetching the webpage from the server for a particular URL when a request is made. It then replaces the currently displayed webpage with the newly fetched one.
+
+Client-Side Routing
+Client-side routing sends minimal code in the initial request and expands it to render different components based on the URL. Single Page Applications (SPAs) primarily use client-side routing. In client-side routing, a router library navigates the user to a new page without sending a request to the backend.
+```
