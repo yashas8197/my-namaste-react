@@ -127,3 +127,8 @@
   background-color: #ff0000; /* Darker blue on hover */
   color: #ffffff; /* Text color on hover */
 }
+
+.user-card {
+  border: 1px solid black;
+  padding: 0.5rem;
+}
