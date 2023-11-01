@@ -14,8 +14,7 @@ class About extends Component {
   render() {
     console.log("parent render");
     return (
-      <div>
-        <h1>its a about page(class)</h1>
+      <div className="my-24">
         <UserClass name={"Yashas(class)"} location={"Udupi(class)"} />
       </div>
     );
