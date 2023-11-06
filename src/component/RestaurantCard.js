@@ -36,4 +36,22 @@ const RestaurantCard = (props) => {
   );
 };
 
+//higher order component
+
+export const withOfferLabel = (RestaurantCard) => {
+  return (res) => {
+    return (
+      <div>
+        <h4
+          className="absolute bottom-0 left-0 right-0 bg-indigo-700 text-white py-2 px-4 text-center"
+          style={{ maxWidth: "100%" }}
+        >
+          {aggregatedDiscountInfoV3.header} {aggregatedDiscountInfoV3.subHeader}
+        </h4>
+        <RestaurantCard />
+      </div>
+    );
+  };
+};
+
 export default RestaurantCard;
