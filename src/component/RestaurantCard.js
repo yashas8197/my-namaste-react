@@ -22,7 +22,9 @@ const RestaurantCard = (props) => {
         className="absolute bottom-0 left-0 right-0 bg-indigo-700 text-white py-2 px-4 text-center"
         style={{ maxWidth: "100%" }}
       >
-        {aggregatedDiscountInfoV3.header} {aggregatedDiscountInfoV3.subHeader}
+        {aggregatedDiscountInfoV3?.header
+          ? aggregatedDiscountInfoV3?.header
+          : "NO OFFERS TODAY"}
       </h4>
       <h3 className="font-bold py-2 text-xl">{name}</h3>
       <h4 className="text-indigo-600 font-semibold text-lg">

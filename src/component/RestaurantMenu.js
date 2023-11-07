@@ -1,3 +1,4 @@
+import { useState } from "react";
 import useRestaurantMenu from "../utils/useRestaurantsMenu";
 import RestaurantCategory from "./RestaurantCategory";
 import Shimmer from "./Shimmer";
@@ -7,6 +8,8 @@ const RestaurantMenu = () => {
   const { resId } = useParams();
 
   const resInfo = useRestaurantMenu(resId);
+
+  const [showIndex, setShowIndex] = useState(null);
 
   if (resInfo === null) return <Shimmer />;
 
@@ -30,16 +33,17 @@ const RestaurantMenu = () => {
         "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory"
     );
 
-  // console.log(resInfo);
-
   return (
     <div className="bg-white p-4 shadow-md text-center">
       <span className="text-2xl font-semibold my-2 block">{name}</span>
       <span className="text-gray-600 text-sm block">{cuisines.join(", ")}</span>
-      {categories.map((category) => (
+      {categories.map((category, index) => (
+        //controlled component
         <RestaurantCategory
           key={category?.card?.card?.id}
           data={category?.card?.card}
+          showIndex={index === showIndex ? true : false}
+          setShowIndex={() => setShowIndex(index)}
         />
       ))}
     </div>

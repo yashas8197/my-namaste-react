@@ -2,11 +2,12 @@ import { useState } from "react";
 import ItemsList from "./ItemsList";
 
 const RestaurantCategory = (data) => {
-  const [showItems, setShowItems] = useState(false);
+  console.log(data.showItem);
 
   const handleClick = () => {
-    setShowItems(!showItems);
+    data.setShowIndex();
   };
+
   return (
     <div>
       <div className="w-6/12 mx-auto my-4 bg-grey-50 shadow-lg p-4 ">
@@ -19,7 +20,7 @@ const RestaurantCategory = (data) => {
           </span>
           <span className="rotate-180">ʌ</span>
         </div>
-        {showItems && <ItemsList items={data?.data?.itemCards} />}
+        {data.showIndex && <ItemsList items={data?.data?.itemCards} />}
       </div>
     </div>
   );
