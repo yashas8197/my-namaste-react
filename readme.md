@@ -568,3 +568,77 @@ Server-side routing involves fetching the webpage from the server for a particul
 Client-Side Routing
 Client-side routing sends minimal code in the initial request and expands it to render different components based on the URL. Single Page Applications (SPAs) primarily use client-side routing. In client-side routing, a router library navigates the user to a new page without sending a request to the backend.
 ```
+
+**Episode 8**
+
+# React Class-Based Components Guide
+
+This guide provides an in-depth explanation of class-based components in React, focusing on their syntax, lifecycle methods, and best practices. Whether you're new to React or looking to deepen your understanding, this guide covers essential concepts.
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Syntax](#syntax)
+- [Props Handling](#props-handling)
+- [State Management](#state-management)
+- [Life Cycle Methods](#life-cycle-methods)
+  - [Mounting Phase](#mounting-phase)
+  - [Update Cycle](#update-cycle)
+  - [Unmounting](#unmounting)
+- [Optimizations](#optimizations)
+- [Single Page Application Issues](#single-page-application-issues)
+- [Async Operations](#async-operations)
+
+## Introduction
+
+In React, class-based components play a crucial role in building dynamic user interfaces. This guide dives into the fundamental concepts, syntax, and best practices associated with class components.
+
+## Syntax
+
+Class-based components follow a specific syntax that involves extending the `React.Component` class. This section covers the basic structure and key elements of class components.
+
+```jsx
+class MyComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      // initialize state variables
+    };
+  }
+
+  render() {
+    return (
+      // JSX code
+    );
+  }
+}
+
+# Props Handling
+To receive and handle props in a class component, a constructor method and super(props) are essential. This section explains the necessity of super(props) and how it enables access to props throughout the component.
+
+# State Management
+Class components are the perfect place to manage state variables. Learn how to create and update state variables, ensuring proper rendering and interaction with the component.
+
+# Life Cycle Methods
+Understanding the life cycle of a class-based component is crucial for efficient development. Explore the sequence of events during mounting, updating, and unmounting phases.
+
+# Mounting Phase
+Learn about the sequence of events that occur when a class component is initially loaded. This includes the constructor, render method, and componentDidMount lifecycle method.
+
+# Update Cycle
+Explore how class components handle updates, including the render and componentDidUpdate lifecycle methods.
+
+# Unmounting
+Discover the componentWillUnmount lifecycle method and its role in cleanup activities, especially in the context of single-page applications.
+
+# Optimizations
+Find out about optimizations when dealing with multiple class components, including batching of render phases for improved performance.
+
+# Single Page Application Issues
+Explore the potential performance loss and issues associated with single-page applications, and strategies to mitigate them.
+
+# Async Operations
+Understand the challenges and best practices when dealing with asynchronous operations within class components.
+
+
+```
